@@ -7,9 +7,9 @@ import servlets.AllRequestsServlet;
 import servlets.MirrorRequestServlet;
 
 public class Main {
-    public static void main(String args[]) throws Exception{
-        AllRequestsServlet allRequestsServlet = new AllRequestsServlet();
-        MirrorRequestServlet mirrorRequestServlet = new MirrorRequestServlet();
+    public static void main(String[] args) throws Exception{
+        servlets.AllRequestsServlet allRequestsServlet = new servlets.AllRequestsServlet();
+        servlets.MirrorRequestServlet mirrorRequestServlet = new servlets.MirrorRequestServlet();
 
         Server server = new Server(8080);
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
